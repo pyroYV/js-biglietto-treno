@@ -4,7 +4,7 @@ const userKm = prompt('Enter how long is your trip in Km');
 const userAge = parseInt(prompt ('How old are you?'));
 let standardPrice = userKm * priceKm;
 
-if ((isNaN(userKm,userAge) == true)  /* || (isNaN(userAge) == true) */ ||  (userKm,userAge < 0) /* || (userAge < 0)  */){
+if ((isNaN(userKm) == true)  || (isNaN(userAge) == true) ||  (userKm < 0) || (userAge < 0) ){
     console.log("error, only positive numbers")
 } else {
     if (userAge < 18){
